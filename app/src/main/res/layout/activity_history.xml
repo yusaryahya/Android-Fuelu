@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_history"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.progik.fuelu.HistoryActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/a_history_tv_tanggalwaktu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hari\nTanggal"
+                android:textAllCaps="false"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="normal|bold|italic" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:paddingBottom="5sp"
+                android:paddingTop="10sp"
+                android:text="HISTORY PENGISIAN"
+                android:textAlignment="textEnd"
+                android:textColor="#ED1C24"
+                android:textSize="24sp"
+                android:textStyle="normal|bold|italic" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="150sp"
+                        android:layout_height="wrap_content"
+                        android:text="Fuelman"
+                        android:textAllCaps="false"
+                        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                        android:textColor="#ffffff"
+                        android:textSize="18sp"
+                        android:textStyle="normal|bold|italic" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=": "
+                        android:textAllCaps="false"
+                        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                        android:textColor="#ffffff"
+                        android:textSize="18sp"
+                        android:textStyle="normal|bold|italic" />
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/spinner_pengisianfuelman"
+                        android:backgroundTint="#ffffff"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView21"
+                        android:layout_width="150sp"
+                        android:layout_height="wrap_content"
+                        android:text="Total berkas"
+                        android:textAllCaps="false"
+                        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                        android:textColor="#ffffff"
+                        android:textSize="18sp"
+                        android:textStyle="normal|bold|italic" />
+
+                    <TextView
+                        android:id="@+id/textView22"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=": "
+                        android:textAllCaps="false"
+                        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                        android:textColor="#ffffff"
+                        android:textSize="18sp"
+                        android:textStyle="normal|bold|italic" />
+
+                    <TextView
+                        android:id="@+id/a_history_tv_berkas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textAllCaps="false"
+                        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                        android:textColor="#ffffff"
+                        android:textSize="18sp"
+                        android:textStyle="normal|bold|italic"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="150sp"
+                        android:layout_height="wrap_content"
+                        android:text="Total Pengisian"
+                        android:textAllCaps="false"
+                        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                        android:textColor="#ffffff"
+                        android:textSize="18sp"
+                        android:textStyle="normal|bold|italic" />
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=": "
+                        android:textAllCaps="false"
+                        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                        android:textColor="#ffffff"
+                        android:textSize="18sp"
+                        android:textStyle="normal|bold|italic" />
+
+                    <TextView
+                        android:id="@+id/a_history_tv_totalisi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Operator"
+                        android:textAllCaps="false"
+                        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                        android:textColor="#ffffff"
+                        android:textSize="18sp"
+                        android:textStyle="normal|bold|italic"
+                        android:visibility="visible"/>
+                </TableRow>
+
+            </TableLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|center_horizontal"
+                android:paddingTop="18sp">
+
+                <Button
+                    android:id="@+id/a_history_ib_back"
+                    android:layout_width="160sp"
+                    android:layout_height="60sp"
+                    android:layout_marginLeft="10sp"
+                    android:background="@drawable/custom_button"
+                    android:drawableLeft="@drawable/back"
+                    android:text="BACK TO FORM"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    tools:ignore="RtlHardcoded" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

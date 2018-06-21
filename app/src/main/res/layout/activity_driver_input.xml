@@ -1,0 +1,603 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_driver_input"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#3c3c3c"
+    tools:context="com.progik.fuelu.DriverInputActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/a_driver_input_tv_tanggalwaktu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Hari\nTanggal"
+                    android:textAllCaps="false"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    android:textStyle="normal|bold|italic" />
+
+                <Button
+                    android:id="@+id/a_driver_input_ib_history"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/history" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:paddingBottom="5sp"
+                android:paddingTop="10sp"
+                android:text="Fuelman Name"
+                android:textAlignment="textEnd"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="normal|bold|italic" />
+
+            <EditText
+                android:id="@+id/a_driver_input_et_fuelmanname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/customTextEditBackground"
+                android:ems="10"
+                android:hint="type here..."
+                android:inputType="textPersonName"
+                android:padding="10sp"
+                android:textSize="16sp"
+                tools:textColor="@color/customTextEditColor"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/a_driver_input_bt_choosefuelman"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10sp"
+                android:background="@drawable/custom_buttonblack"
+                android:text="Choose Fuelman"
+                android:gravity="left|center_vertical"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="italic"
+                android:visibility="visible"/>
+
+            <TextView
+                android:id="@+id/a_driver_input_tv_fuelmanname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:paddingBottom="5sp"
+                android:paddingTop="10sp"
+                android:text="Fuelman"
+                android:textAlignment="gravity"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="normal|bold|italic"
+                android:visibility="gone"/>
+
+            <Spinner
+                android:id="@+id/spinner_fuelman"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#ffffff"
+                android:popupBackground="@android:color/background_light"
+                />
+
+            <!--TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:paddingBottom="5sp"
+                android:paddingTop="10sp"
+                android:text="Fuelman ID"
+                android:textAlignment="textEnd"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="normal|bold|italic" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:paddingBottom="5sp"
+                android:paddingTop="10sp"
+                android:text="Operator ID"
+                android:textAlignment="textEnd"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="normal|bold|italic" /-->
+
+            <EditText
+                android:id="@+id/a_driver_input_et_fuelmanid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/customTextEditBackground"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:padding="10sp"
+                android:textSize="16sp"
+                android:visibility="gone"
+                tools:textColor="@color/customTextEditColor" />
+
+            <EditText
+                android:id="@+id/a_driver_input_et_fuelmannip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/customTextEditBackground"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:padding="10sp"
+                android:textSize="16sp"
+                android:visibility="gone"
+                tools:textColor="@color/customTextEditColor" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:paddingBottom="5sp"
+                android:paddingTop="10sp"
+                android:text="Operator Name"
+                android:textAlignment="textEnd"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="normal|bold|italic" />
+
+            <EditText
+                android:id="@+id/a_driver_input_et_drivername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/customTextEditBackground"
+                android:ems="10"
+                android:hint="type here..."
+                android:inputType="textPersonName"
+                android:padding="10sp"
+                android:textSize="16sp"
+                tools:textColor="@color/customTextEditColor"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/a_driver_input_bt_chooseoperator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10sp"
+                android:background="@drawable/custom_buttonblack"
+                android:text="Choose Operator"
+                android:gravity="left|center_vertical"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="italic"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/a_driver_input_tv_operatorname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:paddingBottom="5sp"
+                android:paddingTop="10sp"
+                android:text="Operator"
+                android:textAlignment="gravity"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="normal|bold|italic"
+                android:visibility="gone"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner_driver"
+                android:backgroundTint="#ffffff"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/a_driver_input_et_driverid"
+                android:background="@color/customTextEditBackground"
+                android:textSize="16sp"
+                android:padding="10sp"
+                tools:textColor="@color/customTextEditColor"
+                android:visibility="gone"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/a_driver_input_et_drivernip"
+                android:background="@color/customTextEditBackground"
+                android:textSize="16sp"
+                android:padding="10sp"
+                tools:textColor="@color/customTextEditColor"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:paddingBottom="5sp"
+                android:paddingTop="10sp"
+                android:text="No. Lambung"
+                android:textAlignment="textEnd"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="normal|bold|italic" />
+
+            <Button
+                android:id="@+id/a_driver_input_bt_choosenolambung"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10sp"
+                android:background="@drawable/custom_buttonblack"
+                android:text="Choose No. Lambung"
+                android:gravity="left|center_vertical"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="italic"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/a_driver_input_tv_nolambung"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:paddingBottom="5sp"
+                android:paddingTop="10sp"
+                android:text="No. Lambung"
+                android:textAlignment="gravity"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="normal|bold|italic"
+                android:visibility="gone"/>
+
+             <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinner_vehicle"
+                    android:backgroundTint="#ffffff"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/a_driver_input_et_vehicleid"
+                android:background="@color/customTextEditBackground"
+                android:textSize="16sp"
+                android:padding="10sp"
+                tools:textColor="@color/customTextEditColor"
+                android:visibility="gone"/>
+
+ <!--           <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/a_driver_input_et_bodyno"
+                android:background="@color/customTextEditBackground"
+                android:textSize="16sp"
+                android:padding="10sp"
+                tools:textColor="@color/customTextEditColor"/>
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:paddingBottom="5sp"
+                android:paddingTop="10sp"
+                android:text="No. Pol"
+                android:textAlignment="textEnd"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="normal|bold|italic" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                android:editable="false"
+                android:ems="10"
+                android:id="@+id/a_driver_input_et_nopol"
+                android:background="@color/customTextEditBackground"
+                android:textSize="16sp"
+                android:padding="10sp"
+                tools:textColor="@color/customTextEditColor" />
+-->
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:paddingBottom="5sp"
+                android:paddingTop="10sp"
+                android:text="Unit"
+                android:textAlignment="textEnd"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="normal|bold|italic" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                android:editable="false"
+                android:ems="10"
+                android:id="@+id/a_driver_input_et_unit"
+                android:background="@color/customTextEditBackground"
+                android:textSize="16sp"
+                android:padding="10sp"
+                tools:textColor="@color/customTextEditColor"
+                android:hint="type here..."/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                android:editable="false"
+                android:ems="10"
+                android:id="@+id/a_driver_input_et_unitdump"
+                android:background="@color/customTextEditBackground"
+                android:textSize="16sp"
+                android:padding="10sp"
+                tools:textColor="@color/customTextEditColor"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:paddingBottom="5sp"
+                android:paddingTop="10sp"
+                android:text="HM/KM Unit"
+                android:textAlignment="textEnd"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="normal|bold|italic" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/a_driver_input_et_kmunit"
+                android:background="@color/customTextEditBackground"
+                android:textSize="16sp"
+                android:padding="10sp"
+                tools:textColor="@color/customTextEditColor"
+                android:hint="type(amount) here..."/>
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:paddingBottom="5sp"
+                android:paddingTop="10sp"
+                android:text="Isi"
+                android:textAlignment="textEnd"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="normal|bold|italic" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/a_driver_input_et_isi"
+                android:background="@color/customTextEditBackground"
+                android:textSize="16sp"
+                android:padding="10sp"
+                tools:textColor="@color/customTextEditColor"
+                android:hint="type(amount) here..."/>
+
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:paddingBottom="5sp"
+                android:paddingTop="10sp"
+                android:text="Kontraktor"
+                android:textAlignment="textEnd"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="normal|bold|italic" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/a_driver_input_et_kontraktor"
+                android:background="@color/customTextEditBackground"
+                android:textSize="16sp"
+                android:padding="10sp"
+                tools:textColor="@color/customTextEditColor"
+                android:hint="type here..."/>
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:paddingBottom="5sp"
+                android:paddingTop="10sp"
+                android:text="Pengawas"
+                android:textAlignment="textEnd"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="normal|bold|italic" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/a_driver_input_et_pengawas"
+                android:background="@color/customTextEditBackground"
+                android:textSize="16sp"
+                android:padding="10sp"
+                tools:textColor="@color/customTextEditColor"
+                android:hint="type here..."/>
+
+            <!--
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="end|right">
+
+                <RadioButton
+                    android:text="LV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioButton"
+                    android:layout_weight="1"
+                    android:textColor="#ffffff"/>
+
+                <RadioButton
+                    android:text="DT OB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioButton1"
+                    android:layout_weight="1"
+                    android:textColor="#ffffff"/>
+
+                <RadioButton
+                    android:text="DT Hauling"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioButton2"
+                    android:layout_weight="1"
+                    android:textColor="#ffffff"/>
+            </RadioGroup>
+
+            -->
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:paddingBottom="5sp"
+                android:paddingTop="10sp"
+                android:text="Informasi Lainnya"
+                android:textAlignment="textEnd"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="normal|bold|italic" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/a_driver_input_et_informasi"
+                android:background="@color/customTextEditBackground"
+                android:textSize="16sp"
+                android:padding="10sp"
+                tools:textColor="@color/customTextEditColor"
+                android:hint="type here..."/>
+
+            <TextView
+                android:text="*Cek kembali data di atas sebelum Submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView9"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                android:gravity="end"
+                android:textAlignment="textEnd"
+                android:textStyle="normal|bold|italic"
+                android:paddingTop="10sp"
+                android:paddingBottom="5sp"
+                android:textSize="14sp"
+                android:textColor="#ffffff"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|center_horizontal">
+
+                <Button
+                    android:id="@+id/a_driver_input_ib_preview"
+                    android:layout_width="160sp"
+                    android:layout_height="60sp"
+                    android:layout_marginRight="10sp"
+                    android:background="@drawable/custom_button"
+                    android:drawableRight="@drawable/magnifier"
+                    android:text="PREVIEW"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/a_driver_input_ib_submit"
+                    android:layout_width="160sp"
+                    android:layout_height="60sp"
+                    android:layout_marginLeft="10sp"
+                    android:background="@drawable/custom_button"
+                    android:drawableRight="@drawable/play"
+                    android:text="SUBMIT"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
